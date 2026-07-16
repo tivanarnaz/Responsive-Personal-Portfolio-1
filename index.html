@@ -383,14 +383,26 @@
           </div>
         </div>
 
-        <form
-          action="mailto:tumotok01@gmail.com"
-          method="post"
-          enctype="text/plain"
-        >
-          <input type="text" name="name" placeholder="name" class="box" />
-          <input type="email" name="mail" placeholder="email" class="box" />
-          <input type="text" name="project" placeholder="subject" class="box" />
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="6e19ae0c-c869-4a42-b4d4-d70ad69cb7a7"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            class="box"
+            required
+          />
           <textarea
             name="message"
             id=""
